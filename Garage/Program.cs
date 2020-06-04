@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Garage
 {
@@ -7,13 +8,30 @@ namespace Garage
         static void Main(string[] args)
         {
             Zero fxs = new Zero();
-            Tesla modelS = new Tesla();
+            Tesla tesla = new Tesla();
             Cessna mx410 = new Cessna();
-            Vehicle v1 = new Vehicle();
+            Ram ram = new Ram();
+
+            System.Console.WriteLine("..........");
             fxs.Drive();
-            modelS.Drive();
-            v1.Drive();
+            fxs.Direction("squeals around right turn");
+            fxs.Stop();
+
+            System.Console.WriteLine("..........");
+            tesla.Drive();
+            tesla.Direction("carefully");
+            tesla.Stop();
+
+            System.Console.WriteLine("..........");
             mx410.Drive();
+            mx410.Direction("not smoothly");
+            mx410.Stop();
+
+            System.Console.WriteLine("..........");
+            ram.Drive();
+            ram.Direction("widely");
+            ram.Stop();
+
         }
     }
 }

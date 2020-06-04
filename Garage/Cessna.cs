@@ -16,4 +16,8 @@ public class Cessna:Vehicle  // Propellor light aircraft
     {
         Console.WriteLine($"Cessna turns {direction}");
     }
+    public override void Stop()
+    {
+        Console.WriteLine($"The white Cessna rolls to a stop after rolling a mile down the runway.");
+    }
 }

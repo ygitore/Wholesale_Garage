@@ -14,6 +14,6 @@ public class Vehicle
     }
     public virtual void Stop()
     {
-        Console.WriteLine($"Vehicle stops");
+        Console.WriteLine($"Vehicle very quickly");
     }
 }
